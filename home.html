@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 
 <style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
  ul {
     list-style-type: none;
     margin: 0;
@@ -24,17 +27,29 @@
 </style>
 
 <head>
-  <title> School Safety Home </title>  
+  <title> School Safety Home </title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-  <h1> CPS Girls Who Code </h1>
+ <h1><center> CPS Girls Who Code School Safety</center></h1>
   <ul>
     <li><a href="earthquake.html">Earthquake</a></li>
     <li><a href="fire.html">Fire</a></li>
   </ul>
- <h4> learn about school safety by clicking on the separate links under the navigation bar :) </h4>
- <h4> We are going to inform you on different safety procedures and school safety standards. </h4> 
+ <div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="img_nature_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_fjords_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+ <h4>About Us</h4>
+ <p>Welcome to our website! Check out our Earthquake page and Fire page for official school policy on what to do in the case of a disaster.  
  
 </body>
 
